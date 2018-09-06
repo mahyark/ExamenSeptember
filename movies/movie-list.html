@@ -1,0 +1,8 @@
+<h1>Movies</h1>
+<ul>
+{% for movie in movie_list %}
+    <li>{{ movie.pub_date|date }} - {{ article.headline }}</li>
+{% empty %}
+    <li>No movies.</li>
+{% endfor %}
+</ul>
